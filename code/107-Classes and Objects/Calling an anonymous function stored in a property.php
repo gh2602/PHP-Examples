@@ -5,7 +5,7 @@ hat means that calling an anonymous function which has been assigned to a proper
 Instead the property has to be assigned to a variable first, for instance.
 As of PHP 7.0.0 it is possible to call such a property directly by enclosing it in parentheses.
  */
-class Foo
+class Foo6
 {
     public $bar;
 
@@ -16,7 +16,7 @@ class Foo
     }
 }
 
-$obj = new Foo();
+$obj = new Foo6();
 
 // as of PHP 5.3.0:
 

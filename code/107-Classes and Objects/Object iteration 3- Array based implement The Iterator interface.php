@@ -9,7 +9,7 @@ if you iterate like this foreach($it as $key => $value) then key() function will
 whereas if you iterate like this foreach($it as $value) then key() function will never called
 */
 
-class MyIterator implements Iterator
+class MyIterator1 implements Iterator
 {
     private $var = array();
 
@@ -58,7 +58,7 @@ class MyIterator implements Iterator
 }
 
 $values = array(1,2,3);
-$it = new MyIterator($values);
+$it = new MyIterator1($values);
 
 foreach ($it as $a => $b) {
     print "$a: $b\n";

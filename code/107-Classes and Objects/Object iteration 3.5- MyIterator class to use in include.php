@@ -57,3 +57,4 @@ class MyIterator implements Iterator
     }
 
 }
+echo "";

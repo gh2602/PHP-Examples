@@ -4,7 +4,7 @@ URL: http://php.net/manual/en/language.oop5.basic.php#106262
 One has to explicitly use (notice the use of <?php $this->bar ?>):
  */
 
-class Foo
+class Foo4
 {
 public $bar = 'Hi There';
 
@@ -12,7 +12,7 @@ public $bar = 'Hi There';
         echo $bar;
     }
 }
-class Moo
+class Moo4
 {
   public  $bar = "hi there";
 
@@ -20,10 +20,10 @@ class Moo
         echo $this->bar;
     }
 }
-$f= new Foo();
+$f= new Foo4();
 $f->PrintInfo();
 
-$m= new Moo();
+$m= new Moo4();
 $m->PrintInfo();
 
 /* output

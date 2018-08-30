@@ -4,7 +4,7 @@ URL: http://php.net/manual/en/language.oop5.decon.php#99903
 a way to use and understand multiple constructors:
 
 */
-class A
+class AAA
 {
     function __construct() // same as __construct(...$args)
     {
@@ -30,6 +30,6 @@ class A
         echo('__construct with 3 params called: '.$a1.','.$a2.','.$a3.PHP_EOL);
     }
 }
-$o = new A('sheep');
-$o = new A('sheep','cat');
-$o = new A('sheep','cat','dog');
+$o = new AAA('sheep');
+$o = new AAA('sheep','cat');
+$o = new AAA('sheep','cat','dog');

@@ -16,7 +16,7 @@ We're assuming that error_reporting is disabled for this example;
 otherwise the following code would trigger deprecated and strict notices, respectively, depending on the PHP version.
  */
 
-class A
+class A2
 {
     function foo()
     {
@@ -30,23 +30,23 @@ class A
     }
 }
 
-class B
+class B2
 {
     function bar()
     {
-        A::foo();
+        A2::foo();
     }
 }
 
-$a = new A();
+$a = new A2();
 $a->foo();
 
-A::foo();
+A2::foo();
 
-$b = new B();
+$b = new B2();
 $b->bar();
 
-B::bar();
+B2::bar();
 
 /*
 Output of the above example in PHP 5:
@@ -58,8 +58,17 @@ $this is not defined.
 
 Output of the above example in PHP 7:
 
-$this is defined (A)
+$this is defined (A2)
+
+Deprecated: Non-static method A2::foo() should not be called statically in ... on line 44
 $this is not defined.
+
+Deprecated: Non-static method A2::foo() should not be called statically in ... on line 37
 $this is not defined.
+
+Deprecated: Non-static method B2::bar() should not be called statically in ... on line 49
+
+Deprecated: Non-static method A2::foo() should not be called statically in ... on line 37
 $this is not defined.
+
  */

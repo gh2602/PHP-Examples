@@ -12,14 +12,14 @@ When overriding methods, the parameter signature should remain the same or PHP w
 This does not apply to the constructor, which allows overriding with different parameters.
  */
 
-class SimpleClass
+class SimpleClass2
 {
     function displayVar()
     {
         echo "a default value \n";
     }
 }
-class ExtendClass extends SimpleClass
+class ExtendClass extends SimpleClass2
 {
     // Redefine the parent method
     function displayVar() // override parent method with same method signature

@@ -22,7 +22,7 @@ Instead it must be implemented by either IteratorAggregate or Iterator.
 
 */
 
-class myIterator implements Iterator {
+class myIterate implements Iterator {
     private $position = 0;
     private $array = array(
         "firstelement",
@@ -60,7 +60,7 @@ class myIterator implements Iterator {
     }
 }
 
-$it = new myIterator;
+$it = new myIterate;
 
 foreach($it as $key => $value) {
     var_dump($key, $value);
